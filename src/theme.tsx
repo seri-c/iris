@@ -26,14 +26,3 @@ export const AppTheme = createTheme(theme, {
   },
 });
 
-declare module "@mui/material/Button" {
-    interface ButtonPropsColorOverrides {
-      salmon: true;
-    }
-  }
-
-  declare module "@mui/material/IconButton" {
-    interface IconButtonPropsColorOverrides {
-      salmon: true;
-    }
-  }

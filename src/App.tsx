@@ -2,15 +2,19 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ElevateAppBar from './components/ElevateAppBar'
 import Button from '@mui/material/Button';
-
-
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { AppTheme } from "./theme";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <ThemeProvider theme= {AppTheme}>
+      <CssBaseline enableColorScheme />
     <>
+    <ElevateAppBar></ElevateAppBar>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -33,6 +37,8 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
+
+    </ThemeProvider>
   )
 }
 

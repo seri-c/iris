@@ -1,0 +1,37 @@
+[
+    {
+        "name": ".tasty-recipes-title",
+        "recipe": ".tasty-recipes-entry-content",
+        "ingredients": ".tasty-recipes-ingredients",
+        "cookTime": ".tasty-recipes-cook-time",
+        "prepTime": ".tasty-recipes-prep-time",
+        "cusine": ".tasty-recipes-cuisine",
+        "instructions": "ol"
+    },
+    {
+        "name": ".article-heading",
+        "recipe": ".article-content",
+        "ingredients": ".mm-recipes-structured-ingredients__list",
+        "cookTime": {
+            "class": ".mm-recipes-details__value",
+            "idx": 1,
+            "min_len": 4
+        },
+        "prepTime": {
+            "class": ".mm-recipes-details__value",
+            "idx": 0,
+            "min_len": 2
+        },
+        "cusine": "",
+        "instructions": "ol"
+    },
+    {
+        "name": ".wprm-recipe-name",
+        "recipe": ".wprm-recipe-container",
+        "ingredients": ".wprm-recipe-ingredient-group",
+        "cookTime": ".wprm-recipe-cook_time",
+        "prepTime": ".wprm-recipe-prep_time",
+        "cusine": ".wprm-recipe-cuisine",
+        "instructions": ".wprm-recipe-instructions"
+    }
+]
